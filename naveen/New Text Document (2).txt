@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<title>table</title>
+</head>
+<body>
+   
+   
+	FirstName:<input type = "text"  placeholder="FirstName" style="color:red; background-color:xgreen"></input> 
+	<br/><br/>
+	Pass Word:<input type = "text"  placeholder="4 letters"/>
+
+	<table> <table border="1" bordercolor="bule" width="10%" cellpading="1" cellspacing="1">
+		<tr>
+			<th colspan="5">Seminar</th><br/>
+		</tr>
+		<tr>
+			<th rowspan="2">Day</th>
+			<th colspan="2">Scedule</th>
+			<th rowspan="2">Topic</th>
+		
+		</tr>
+		<tr>
+			
+			<th>Begin</th>
+			<th>End</th>
+			
+		</tr>
+		<tbody>
+		 <tr>
+		 	<td rowspan="2">Monday</td>
+		 	<td rowspan="2" bgcolor="red">8:00 a.m</td>
+		 	<td rowspan="2" bgcolor="bule">5:00 p.m</td>
+		 	<td>Introduction to XTML</td>
+
+		 </tr>
+		 <tr>
+            
+            
+           
+            <td>Validity:DTD to Relax NG</td>
+		 </tr>
+		 <tr>
+            <td rowspan="3">Tuesday</td>
+            <td bgcolor="red">8:00 a.m</td>
+            <td bgcolor="orange">11.00 a.m</td>
+            <td rowspan="2"><center>xpath</center></td>
+		 </tr>
+		  <tr>
+            
+            <td bgcolor="orange">11:00 a.m</td>
+            <td bgcolor="skybule">2.00 p.m</td>
+            
+		 </tr>
+		  <tr>
+            
+            <td bgcolor="skybule">2:00 p.m</td>
+            <td bgcolor="bule">5.00 a.m</td>
+            <td>XSL trasformation</td>
+		 </tr>
+		  <tr>
+            <td>Wednesday</td>
+            <td bgcolor="red">8:00 a.m</td>
+            <td bgcolor="yellow">12.00 p.m</td>
+            <td>XSL Formatting Objects</td>
+		 </tr>
+		</tbody>
+	</table>
+	
+
+</body>
+</html>		
