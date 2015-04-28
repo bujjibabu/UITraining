@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.mybody{
+			background: url('../images/bgimage.jpg');
+			background-repeat: repeat;
+		}
+		.myform{
+			  background: rgb(145, 106, 211);
+			  padding-bottom: 20px;
+			  width: 30%;
+			  border: 5px solid rgb(77, 77, 37);
+			  margin-left: 30%;
+			  margin-top:10%;
+			  text-align: center;
+			  border-radius: 15px;
+		}
+		.myinputbox{
+			height:30px;
+			border-radius: 5px;
+		}
+		.signin-btn{
+			  background: rgb(58, 200, 58);
+			  padding: 5px 30px 5px 30px;
+			  color: rgb(25, 38, 166);
+		}
+		label{
+			color:#fff;
+			font-size: 17px;
+		}
+		.myheading{
+			text-transform: capitalize;
+		}
+	</style>
+</head>
+<body class="mybody">
+	<div>
+		<form class="myform">
+			<center><h1 class="myheading">LogIn</h1></center>
+			<label>UserName:</label>
+			<input type="text" placeholder="username" class="myinputbox"/>
+			<br/><br/>
+			<label>Password: &nbsp;</label>
+			<input type="password" placeholder="password" class="myinputbox"/>
+			<p><center><input type="submit" value="login" class="signin-btn"></center></p>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,6 +1,10 @@
 #background
 {
-	background-color: purple; 
+	background-color: purple;
+  background-color: purple;
+  width: 50%;
+  left: 25%;
+  position: absolute; 
 } 
 
 #background_color
