@@ -1,0 +1,20 @@
+#background
+{
+	background-color: purple;
+	background-color: purple;
+  	width: 50%;
+  	left: 25%;
+  	position: absolute; 
+} 
+
+#background_color
+{
+	background-color: grey; 
+} 
+.my_body{
+	background-color: grey;
+	background-repeat: repeat;
+}
+.form_input{
+	border-radius: 3px;
+}
