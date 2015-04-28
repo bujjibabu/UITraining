@@ -1,0 +1,35 @@
+#background
+{
+	background-image: url("form.jpg");
+  	background-repeat: repeat;
+ 	width: 40%;
+  	left: 28%;
+  	height: 100%;
+  	position: absolute; 
+} 
+
+#background_color
+{
+	background-color: grey; 
+} 
+.heading{
+	background-color: yellow;
+}
+/*.my_body{
+	background-color: grey;
+	background-repeat: repeat;
+}*/
+.form_input{
+	  border-radius: 7px;
+ 	 height: 22px;
+ 	}
+.form_submit{
+	background-color: skyblue;
+	border-radius: 6px;
+	padding: 5px;
+}
+.form_reset{
+	background-color: skyblue;
+	border-radius: 6px;
+	padding: 5px;
+}
