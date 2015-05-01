@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>CSS Positions</title>
+	<style type="text/css">
+		.req{
+			font-size: 10px;
+			color:#c0c0c0;
+		}
+		.req:hover{
+			color:red;
+			font-size: 30px;
+			background: blue;
+			cursor: pointer;
+		}
+		.leftdiv,
+		.rightdiv{
+			width:50%;
+			float: left;
+		}
+		body{
+			width:90%;
+			margin: 0 auto;
+			background: url('../images/bgimage1.jpg');
+		}
+		.myform .leftdiv select,
+		.myform .rightdiv input{
+			width: 90%;
+		}
+		.myul{
+			background: black;
+			color:#fff;
+		}
+		.myul li:last-child{
+			background: red;
+		}
+		.myul li:nth-child(3){
+			background: red;
+		}
+		.myul li:last-child:first-letter{
+			color:blue;
+		}
+		.my-box{
+			height: 100px;
+			width: 100px;
+			box-shadow: 3px 4px #888;
+			background: red;
+		}
+		.my-box2{
+			height: 100px;
+			width: 100px;
+			box-shadow: 3px 4px #888;
+			background: red;
+			transform: rotate(135deg);
+		}
+		.my-box3{
+			height: 100px;
+			width: 100px;
+			box-shadow: 3px 4px #888;
+			background: red;
+			margin-top: 50px;
+		}
+		.my-box3:hover{
+			transform:scale(0.5,0.5);
+		}
+		.myul2{
+			list-style-type: none;
+		}
+		.myul2 li{
+			display: inline-block;
+
+			background: linear-gradient(red,green);
+			background:-webkit-linear-gradient(red,green);
+			background: -ms-linear-gradient(red,green);
+			background: -moz-linear-gradient(red,green);
+
+			padding:10px 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="parentDiv">
+		<div class="childdiselectv2">
+			<form class="myform">
+				<div class="leftdiv">
+					<label>Report Type  <span class="req">Required</span></label>
+					<br/>
+					<select>
+						<option value="">option1</option>
+						<option value="1">option2</option>
+						<option value="2">option3</option>
+						<option value="3">option4</option>
+					</select>
+				</div>
+				<div class="rightdiv">
+					<label>Product Termination Date</label>
+					<br/>
+					<input type="text" placeholder="enter name">
+				</div>
+				<br/>
+			</form>
+			<br/>
+			<br/>
+			<ul class="myul">
+				<li>list item1</li>
+				<li>list item2</li>
+				<li>list item3</li>
+				<li>list item4</li>
+				<li>list item5</li>
+				<li>list item5</li>
+				<li>list item5</li>
+				<li>list item5</li>
+				<li>list item5</li>
+			</ul>
+			<div class="my-box"></div>
+			<ul class="myul2">
+				<li>list item1</li>
+				<li>list item2</li>
+				<li>list item3</li>
+				<li>list item4</li>
+				<li>list item5</li>
+			</ul>
+			<div class="my-box2">Bujji Babu</div>
+			<div class="my-box3">Bujji Babu</div>
+		</div>
+	</div>
+</body>
+</html>
