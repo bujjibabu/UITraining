@@ -1,0 +1,50 @@
+.req
+{
+	font-size: 10px;
+	color:#c0c0c0;
+}
+.horizontal
+{
+	margin-right: 60px;
+}
+.leftdiv,
+.rightdiv
+{
+	width:50%;
+	float: left;
+}
+body
+{
+	width:90%;
+	margin: 0 auto;
+}
+.myform .leftdiv select,
+.myform .rightdiv input
+{
+	width: 90%;
+}
+.myhead
+{
+	width: 95%;
+}
+.right,
+.left
+{
+	width:47%;
+	float:left;
+}
+.auto
+{
+	font-size: 13px;
+}
+.end
+{
+	float: right;
+	padding: 10px;
+	margin-right: 55px;
+}
+.myform .rightdiv select
+{
+	width: 90%;
+}
+		

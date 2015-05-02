@@ -1,0 +1,23 @@
+.leftdiv,
+.rightdiv
+{
+	float: left;
+	width: 25%;
+}
+body
+{
+	width:90%;
+	margin: 0 auto;
+}
+
+.my-box{
+			height: 100px;
+			width: 90px;
+			background: #FF9041;
+			float: left;
+			
+			}
+.actual{
+	float: left;
+	width:20%;
+}
