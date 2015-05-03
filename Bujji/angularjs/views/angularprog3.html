@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+	<title>Angularjs</title>
+	<style type="text/css">
+	.head{
+		text-align: center;
+		color:red;
+	}
+	</style>
+</head>
+<body ng-controller="myFirstCtrl">
+	<div class="head" ng-init="myname='ram'"><h3>Angularjs</h3></div>
+	<div ng-show="show">Enter Name:<input type="text" ng-model="name"/></div>
+	<div>Enter Your Name:<input type="text" ng-model="myname"/></div>
+	<button ng-click="fnShow()">show</button>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/myFirstCtrl.js" ></script>
+</body>
+</html>
