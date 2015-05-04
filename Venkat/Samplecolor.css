@@ -1,0 +1,38 @@
+.myform{
+	
+	background-color: blue;
+	width: 30%;
+	text-align: center;
+	height: 10%;
+	margin-bottom: 80px;
+}
+
+/*.myheader
+{
+
+	background-color: black;
+	color: #99D5FF;
+	width:40%;
+	text-align: center;
+	margin-top:-40px;
+}*/
+.myul{
+			list-style-type: none;
+			background: #ff950e;
+		}
+.myul li {
+	display: inline-block;
+	color: #fff;
+	padding: 5px 20px;
+	font-size: 25px;
+	background-position: center;
+}
+.myul li:hover{
+	cursor:pointer;
+	background:skyblue;
+}
+.myimage{
+	background-image: url("eeshu.jpg");
+	background-color: #99D5FF;
+	background-size: 250px;
+}
