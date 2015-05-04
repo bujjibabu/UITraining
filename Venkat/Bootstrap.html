@@ -5,55 +5,120 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<style type="text/css">
 			.venkat{
-				background-color: orange;
-				color: white; 
+				
+				width: 50%;
+				padding: 17px;
 			}
-			.final{
-				color: red;
+			.color{
+				background-color: orange;
+				color: white;
+				padding: 12px;
+				width: 50%; 
+				
+			}
+			.down{
+				margin-bottom: 8%;
+
 			}
 		</style>
 	</head>
 	<body>
-		<div>
-			<h3>SCHEDULE ADHERENCE</h3>
-		</div>
-		<div class="col-md-4 venkat"><h2>SCHEDULED<br/>350.00</h2></div>
-		<div class="col-md-4 venkat"><h2>ACTUAL<br/>357.00</h2></div>
-		<div class="col-md-4 venkat"><h2>VARIANCE<br/>7.50</h2></div>
-		
-		<div class="col-md-5"><h4>Departments</h4></div>
-		<div class="col-md-3"><h4>Associate</h4></div>
-		<div class="col-md-2"><h4>Scheduled</h4></div>
-		<div class="col-md-2"><h4>Variance</h4></div>
-	
-		<div class="col-md-5">Customer Service</div>
-		<div class="col-md-3">2</div>
-		<div class="col-md-2">93.00</div>
-		<div class="col-md-2 final">3.50</div>
-
-		<div class="col-md-5">Lumber</div>
-		<div class="col-md-3">2</div>
-		<div class="col-md-2">58.00</div>
-		<div class="col-md-2 final">1.50</div>
-
-		<div class="col-md-5">Paint</div>
-		<div class="col-md-3">2</div>
-		<div class="col-md-2">64.00</div>
-		<div class="col-md-2 final">1.00</div>
-
-		<div class="col-md-5">Plumbing</div>
-		<div class="col-md-3">1</div>
-		<div class="col-md-2">34.00</div>
-		<div class="col-md-2 final">.75</div>
-
-		<div class="col-md-5">Register</div>
-		<div class="col-md-3">4</div>
-		<div class="col-md-2">128.00</div>
-		<div class="col-md-2 final">.50</div>
-
-		<div class="col-md-5">Stock</div>
-		<div class="col-md-3">3</div>
-		<div class="col-md-2">95.00</div>
-		<div class="col-md-2 final">.25</div>
+			<div>
+				<i><b><h2>SCHEDULE ADHERENCE</h2></b></i>
+			</div><br/><br/>
+			<div class="col-md-offset-1">
+				<div class="col-md-4">
+					<select class="venkat">
+						<option>Associates</option>
+						<option>Associates</option>
+						<option>Associates</option>
+						<option>Associates</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select class="venkat">
+						<option>All Departs</option>
+						<option>All Departs</option>
+						<option>All Departs</option>
+						<option>All Departs</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select class="venkat">
+						<option>Week to Date</option>
+						<option>Week to Date</option>
+						<option>Week to Date</option>
+						<option>Week to Date</option>
+					</select>
+				</div>
+			</div>
+			<div class="down"></div>
+			<div class="col-md-offset-1">
+				<div class="col-md-4">
+					<div class="color"><h3>SCHEDULED<br/>350.00</h3></div>
+				</div>
+				<div class="col-md-4">
+					<div class="color"><h3>ACTUAL<br/>357.00</h3></div>
+				</div>
+				<div class="col-md-4 ">
+					<div class="color"><h3>VARIANCE<br/>7.50</h3></div>
+				</div>
+			</div><br/><br/>
+			<div class="down"></div>
+			<i><table class="table table-bordered table-responsive">
+				<thead>
+					<tr>
+						<th class="text-uppercase">Department</th>
+						<th class="text-uppercase">Associates</th>
+						<th class="text-uppercase">Scheduled</th>
+						<th class="text-uppercase">Variance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="text-success">
+						<td>21- Customer Service</td>
+						<td>3</td>
+						<td>93.00</td>
+						<td>3.50</td>
+					</tr>
+					<tr class="text-danger">
+						<td>24- Lumber</td>
+						<td>2</td>
+						<td>58.00</td>
+						<td>1.25</td>
+					</tr>
+					<tr class="text-warning">
+						<td>25- Paint</td>
+						<td>2</td>
+						<td>64.00</td>
+						<td>1.00</td>
+					</tr>
+					<tr class="text-info">
+						<td>35- Plumbing</td>
+						<td>1</td>
+						<td>34.00</td>
+						<td>0.75</td>
+					</tr>
+					<tr class="text-active">
+						<td>42- Register</td>
+						<td>4</td>
+						<td>128.0</td>
+						<td>0.50</td>
+					</tr>
+					<tr calss="text-sucess">
+						<td>78- Stock</td>
+						<td>3</td>
+						<td>95.00</td>
+						<td>0.25</td>
+					</tr>
+				</tbody>
+			</table></i>
 	</body>
 </html>
+
+
+
+
+
+
+
