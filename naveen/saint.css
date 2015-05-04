@@ -1,0 +1,56 @@
+.header{
+	background-color:blue;
+	float;left: 
+}
+.htext{
+	border-left:40px;
+	width:center;
+	float:left;
+
+}
+.header2{
+	border-top-right:20px;
+}
+.thead{
+	display:inline-block;
+}
+.hr{
+	margin-right:40px;
+}
+.project{
+	width:90%;
+	padding:10px;
+
+}
+.form  .leftdiv select,
+.form .rightdiv input
+{
+	width: 90%;
+
+}
+.text{
+	height:40%;
+	padding:40%;
+}
+
+.body{ 
+
+   margin:0 auto;
+}
+.leftdiv,
+.rightdiv{
+
+ width:40%;
+ float:left;
+}
+
+.lefttext,
+.righttext
+{
+	width:40%
+
+
+}
+
+
+

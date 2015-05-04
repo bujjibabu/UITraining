@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<title>Angularjs</title>
+	<style type="text/css">
+	.head{
+		text-align: center;
+		color:red;
+	}
+	</style>
+</head>
+<body ng-app="">
+	<div class="head"><h3>Angularjs</h3></div>
+	<div>{{1+6}}</div>
+	<input type="text" placeholder="Enter your name" ng-model="myname"/>
+	<div>using '{{}}'===> {{myname}}</div>
+	using ng-bind: <div ng-bind="myname"></div>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+</body>
+</html>

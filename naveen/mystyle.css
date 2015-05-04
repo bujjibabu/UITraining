@@ -1,4 +1,22 @@
 body{
+	
+	padding-top: 20px;
+	padding-left:500px;
+	padding-right:500px;
 	background-color:green;
 }
+#h1{
+	color:red;
+	background-color:gray;
+}
+.input{
+	border-radius:12px;
+	background-color:skyblue;
+}
+.button{
+	background-color:red;
+	font-style:italic;
+	color:white;
+}
+
      
