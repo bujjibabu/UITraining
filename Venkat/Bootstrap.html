@@ -5,29 +5,38 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<style type="text/css">
 			.venkat{
-				
-				width: 50%;
+				width: 100%;
 				padding: 17px;
+				margin-bottom: 30px;
 			}
 			.color{
 				background-color: #FF9041;
 				color: white;
-				padding: 12px;
-				width: 50%; 
-				
+				padding-top: 22px;
+				height: 130px;
+				margin-bottom: 30px;
 			}
 			.down{
 				margin-bottom: 8%;
 
 			}
+			.text{
+				font-size: 17px;
+			}
+			.number{
+				font-size: 45px;
+			}
 		</style>
 	</head>
 	<body>
 			<div>
-				<i><b><h2>SCHEDULE ADHERENCE</h2></b></i>
-			</div><br/><br/>
-			<div class="col-md-offset-1">
-				<div class="col-md-4">
+				<div class="col-sm-offset-1 col-sm-10">
+					<h2 class="col-md-12">SCHEDULE ADHERENCE</h2>
+				</div>
+			</div>
+			<br/><br/>
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="col-sm-4">
 					<select class="venkat">
 						<option>Associates</option>
 						<option>Associates</option>
@@ -35,7 +44,7 @@
 						<option>Associates</option>
 					</select>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<select class="venkat">
 						<option>All Departs</option>
 						<option>All Departs</option>
@@ -43,7 +52,7 @@
 						<option>All Departs</option>
 					</select>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<select class="venkat">
 						<option>Week to Date</option>
 						<option>Week to Date</option>
@@ -53,19 +62,20 @@
 				</div>
 			</div>
 			<div class="down"></div>
-			<div class="col-md-offset-1">
-				<div class="col-md-4">
-					<div class="color"><h3>SCHEDULED<br/>350.00</h3></div>
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+				<div class="col-sm-4">
+					<div class="color text-center"><span class="text">SCHEDULED</span><br/><span class="number">350.00</span></div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="color"><h3>ACTUAL<br/>357.00</h3></div>
 				</div>
-				<div class="col-md-4 ">
+				<div class="col-sm-4 ">
 					<div class="color"><h3>VARIANCE<br/>7.50</h3></div>
 				</div>
 			</div><br/><br/>
 			<div class="down"></div>
-			<i><table class="table table-bordered table-responsive">
+			<div class="col-sm-offset-1 col-sm-10">
+				<table class="table table-bordered table-responsive col-md-12">
 				<thead>
 					<tr>
 						<th class="text-uppercase">Department</th>
@@ -112,7 +122,8 @@
 						<td>0.25</td>
 					</tr>
 				</tbody>
-			</table></i>
+			</table>
+		</div>
 	</body>
 </html>
 
