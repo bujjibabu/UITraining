@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+		.myform{
+		  background: #c0c0c0;
+		  padding: 30px 30px;
+		  color: #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<p class="clearfix"></p>
+		<div class="col-sm-offset-4 col-sm-4">
+			<table class="table table-stripped table-responsive table-bordered">
+				<thead>
+					<tr>
+						<th>UserName</th>
+						<th>Address</th>
+						<th>Mobile</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="td1"></td>
+						<td id="td2"></td>
+						<td id="td3"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript">
+		//var myobj =	{};
+		//var myobj1 = new object;
+		//var myobj2 = {name:'BujjiBabu',address:'Hyderabad',mobile:7799476655};
+		var myobj3 = {"name":"BujjiBabu","address":"Hyderabad","mobile":7799476655};
+		//alert(myobj2.name);
+		document.getElementById('td1').innerHTML = myobj3.name;
+		document.getElementById('td2').innerHTML = myobj3.address;
+		document.getElementById('td3').innerHTML = myobj3.mobile;
+		</script>
+	</body>
+</html>
