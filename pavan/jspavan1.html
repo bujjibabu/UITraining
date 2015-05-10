@@ -11,41 +11,37 @@
 		}
 		</style>
 <body>
-
+		<p class="clearfix"></p>
 		<div class="col-md-12">
 			<form class="col-md-offset-4 col-md-4 myform">
 				<div class="form-group">
 					<p class="clear-fix"></p>
 					<label>First name</label>
-					<input type="text" class="form-control" placeholder="Enter Name" id="name 1">
+					<input type="text" class="form-control" placeholder="Enter Name" id="name1">
 				</div>
 				<div class="form-group">
 					<label>Last name</label>
-					<input type="text" class="form-control" placeholder="Enter Name" id="name 2">
+					<input type="text" class="form-control" placeholder="Enter Name" id="name2">
 				</div>
 				<div class="form-group">
 					<label>Password</label>
 					<input type="password" class="form-control" placeholder="Enter Password" id="password">
 				</div>
-				<div class="col-md-12">
-					<form class="col-md-offset-4 col-md-4 myform">
-						<div class="form-group>"
-							<label>mobile number</label>
-							<input type="number" class="form-control" placeholder="mobile number" id="number">
-						</div><br/>
-						</div>
-						<div class="col-md-12">
-					<form class="col-md-offset-4 col-md-4 myform">
-						<div class="form-group>"
-							<label>E mail</label>
-							<input type="E mail" class="form-control" placeholder="enter E mail Id" id="mail">
-						</div><br/>
-						</div>
-						<p><text-center> My birthday</text><p>
-						<div class="col-md-offset-3 col-md-6">
+				<div class="form-group>"
+					<label>mobile number</label>
+					<input type="number" class="form-control" placeholder="mobile number" id="number">
+				</div>
+				<div class="form-group>"
+					<label>E mail</label>
+					<input type="E mail" class="form-control" placeholder="enter E mail Id" id="mail">
+				</div>
+			<center>My birthday</center>
+					
+						
+						<div class="col-md-offset-2 col-md-8">
 							<select>
-								<label>month</label>
-									<option>07</option>
+									<option>month</option>
+									<option value="07">07</option>
 									<option>08</option>
 									<option>09</option>
 									<option>10</option>
@@ -54,7 +50,7 @@
 									<option>06</option>
 							</select>
 							<select>
-							        <label>day</label>
+							        <option>day</option>
 									<option>7</option>
 									<option>08</option>
 									<option>9</option>
@@ -64,7 +60,7 @@
 									<option>13</option>
 							</select>
 							<select>
-							        <label>year</label>
+							        <opton>year</option>
 								    <option>07</option>
 									<option>08</option>
 									<option>09</option>
@@ -79,10 +75,10 @@
 							<p>By clicking Sign Up, you agree to our Terms and that you have read our Data Policy, including our Cookie Use.</p>
 						
 						<div class= "col-md-12">
-							<div class="col-md-offset-5 col-md-2 myform">
-				<button class= "btn btn-danger" onclick="myfunction()">Sign up</button>
-			</div><br/>
-		</div>
+							<div class="text-center">
+								<button class= "btn btn-danger" onclick="myfunction()">Sign up</button>
+							</div>
+						</div>
 			</form>
 		</div>
 		<script type="text/javascript">
@@ -92,6 +88,11 @@
 				var password = document.getElementById('password').value;
 				var number = document.getElementById('number').value;
 				var number = document.getElementById('mail').value;
+				var opts=[{month:"jan"},{month:"feb"},];
+
+				// for (var i = 0; i < opts.length; i++) {
+				// 	document.getElementById('options').innerHTML = '<option>'+opts[i].month+'</option>'
+				// };
 			} 
 		</script>
 </body>

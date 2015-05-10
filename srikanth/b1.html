@@ -2,47 +2,23 @@
 <html>
 <head>
 	<title></title>
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script type="text/javascript">
-	
-</script>
-
-<script>
-function fnSignIn(){
-	var fname = document.getElementById('fname').value;
-	var lname= document.getElementById('lname').value;
-	var email= document.getElementById('email').value;
-	var username = document.getElementById('username').value;
-	var password1 = document.getElementById('pass1').value;
-	var passwors2 = document.getElementById('pass2').value;
-	var phone = document.getElementById('phone').value;
-	var country= document.getElementById('country').value;
-
-	
-
-	window.alert('Fname: ' + fname + ' Lname: ' + lname +  ' Email: '  + email + ' username : ' + username + ' phonr: ' + phone + ' country : ' + country);
-
-
-
-
-
-document.getElementById('tarea').innerHTML= fname;
-
-}
-</script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
-
-
 <body>
 <div class="col-sm-12">
-			<form class="col-sm-offset-4 col-sm-4 myform">
+<div class="col-sm-offset-4 col-sm-4 myform">
 	<div class="form-group">
 	<p class="clearfix"></p>
-		<label for="fname">First Name:</label>
-		<input type="text" id="fname" class="form-control" placeholder="Enter your First Name">
-		<label for="lname">Last Name:</label>
-		<input type="text" id="lname" class="form-control" placeholder="Enter LastName">
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" class="form-control" placeholder="Enter your First Name"/>
+			</div>
+			<div class="form-group col-sm-6">
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" class="form-control" placeholder="Enter LastName"/>
+			</div>
+		</div>
 		<label for="lname">Email:</label>
 		<input type="email" id="email" class="form-control" placeholder="Enter your email">
 		<label for="username">UserName: </label>
@@ -53,35 +29,47 @@ document.getElementById('tarea').innerHTML= fname;
 		<input type="password" class="form-control" id="pass2">
 		<p class="clearfix"></p>
 		<label for="gen">Gender: </label>
-
-		<input type="radio" name="gender" value="male">Male
-		<input type="radio" name="gender" value="female"> Female
-
+		<input type="radio" name="gender" value="male" id="male" onchange="fnselected('Male')">Male
+		<input type="radio" name="gender" value="female" id="female"  onchange="fnselected('Female')"> Female
+		<br/>
 		<label for="phone">Phone Number:</label>
 		<input type="tel" id="phone" class="form-control" placeholder="Enter your Phone">
-
-		
   		<label for="country">Select Country:</label>
-  		<select class="form-control" id="country" value="country">
-    	<option>Select country</option>
-    	<option>India</option>
-    	<option>Us</option>
-    	<option>Uk</option>
-    	<option>Aus</option>
- 		 </select> <br><br>
-
- 		 <button  class="btn btn-success" onclick="fnSignIn()"> Submit</button> <br><br>
-
- 	
-	
+  		<select class="form-control" id="country">
+	    	<option value=" ">Select country</option>
+	    	<option value="India">India</option>
+	    	<option value="Us">Us</option>
+	    	<option value="Uk">Uk</option>
+	    	<option vlaue="Aus">Aus</option>
+ 		 </select> 
+ 		 <br><br>
+ 		 <button  class="btn btn-success" onclick="fnSignIn()"> Submit</button> <br><br>	
 	</div>
 </div>
-</form>
+</div>
 <p id="tarea"></p>
 
-
-
+	<script>
+	var gendar='';
+	function fnselected(value){
+		gendar = value;
+		//alert(radioboxvalue)
+	}
+	function fnSignIn(){
+		var fname = document.getElementById('fname').value;
+		var lname= document.getElementById('lname').value;
+		var email= document.getElementById('email').value;
+		var username = document.getElementById('username').value;
+		var password1 = document.getElementById('pass1').value;
+		var passwors2 = document.getElementById('pass2').value;
+		var phone = document.getElementById('phone').value;
+		var country= document.getElementById('country').value;
+		var radioboxvalue= gendar;
+		var myobj = {name:fname,}
+		console.log("fname:",fname ,' Lname: ', lname)
+		alert('Fname: ' + fname + ' Lname: ' + lname +  ' Email: '  + email + ' username : ' + username + ' phonr: ' + phone + ' country : ' + country);
+		document.getElementById('tarea').innerHTML= radioboxvalue;
+	}
+	</script>
 </body>
-
-
 </html>
