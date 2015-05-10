@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<style type="text/css">
+	.myform{
+		background-color: gray;
+		padding: 20px 20px;
+	}
+	</style>
+</head>
+<body>
+<div>
+<div class="col-md-12">
+<div class="col-md-offset-3 col-md-6 myform">
+	<p Id="p">Logical operations will be done by Javascript</p>
+    <div class="row">
+		    <div class="col-md-6 form-group">
+			<label>NUMBER TEXT</label>
+            <input type="text" Id="Name" placeholder="enter number" class="form-control"  >
+	    </div>
+		<div class="col-md-6 form-group">
+			<label>NUMBER</label>
+            <input type="number" Id="name" placeholder="enter number" class="form-control"  >
+	    </div>
+	</div>
+	<p>Please input a number between 10 and 100:</p>
+    <input id="number" type="number"/>
+    <button type="submit" onclick="myfunction()">Submit</button>
+	<p id="para"></p>
+</div>
+</div>
+<script type="text/javascript">
+function myfunction(){
+	document.getElementById('Name').value="10srikanth";
+	document.getElementById('name').value=1000;
+	document.getElementById('p').innerHTML="Srikanthreddy N";
+	var x, text;
+    x = document.getElementById("number").value;
+    if ( x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("para").innerHTML = text;
+	console.log('x,text');
+}
+</script>
+</body>
+</html>
