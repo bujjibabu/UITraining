@@ -1,0 +1,70 @@
+<!Doctype Html>
+<html>
+	<head>
+		<title>JavaScript Program 2</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.venkat{
+				background: orange;
+				color: green;
+				padding-top: 15px;
+				padding-bottom: 25px;
+				border-radius: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12">
+			<form class= "col-sm-offset-4 col-sm-4 venkat">
+				<div class="form-group">
+					<lable>FirstName</label>
+					<input type="text" class="form-control" placeholder= "Enter FirstName" id="FirstName">
+				</div>
+				<div class="form-group">
+					<lable>LastName</label>
+					<input type="text" class="form-control" placeholder= "Enter LastName" id="LastName">
+				</div>
+				<div class="form-group">
+					<lable>UserName</label>
+					<input type="text" class="form-control" placeholder= "Enter UserName" id="UserName">
+				</div>
+				<div class="form-group">
+					<lable>Password</label>
+					<input type="text" class="form-control" placeholder= "Enter Password" id="Password">
+				</div>
+				<div class="form-group">
+					<lable>Address</label>
+					<input type="text" class="form-control" placeholder= "Enter Address" id="Address">
+				</div>
+				<div class="form-group">
+					<lable>Pincode</label>
+					<input type="text" class="form-control" placeholder= "Enter Pincode" id="Pincode">
+				</div>
+				<div class="form-group">
+					<lable>Mobile</label>
+					<input type="text" class="form-control" placeholder= "Enter Mobile" id="Mobile">
+				</div>
+				<button class= "btn btn-success" onclick="fnLogin()">Login</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+			function fnLogin()
+			{
+				var FirstName = document.getElementById("FirstName").value;
+				var LastName = document.getElementById("LastName").value;
+				var UserName = document.getElementById("UserName").value;
+				var Password = document.getElementById("Password").value;
+				var Address = document.getElementById("Address").value;
+				var Pincode = document.getElementById("Pincode").value;
+				var Mobile = document.getElementById("Mobile").value;
+				alert("Entered Firstname:" + FirstName);
+				alert("Entered Lastname:" + LastName);
+				alert("Entered Username:" + UserName);
+				alert("Entered Password:" + Password);
+				alert("Entered Address:" + Address);
+				alert("Entered Pincode:" + Pincode);
+				alert("Entered Mobile:" + Mobile);
+		    }
+    	</script>
+	</body>
+</html>
