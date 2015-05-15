@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+		.myform{
+		  background: #c0c0c0;
+		  padding: 30px 30px;
+		  color: #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<p class="clearfix"></p>
+		<div class="col-sm-offset-4 col-sm-4">
+			<button class="btn btn-primary" onmouseout="myFun()">click here</button>
+			<button class="btn btn-primary" onmouseenter="myFun1()">click here1</button>
+		</div>
+		<script type="text/javascript">
+			
+			function myFun(){
+				alert('mouseout');
+				function mySubFun(){
+					var x = 10;
+				}
+			} 
+			function myFun1(){
+				var y =20;
+				var name= 'bujji';
+				var z = 10;
+
+				var y=20,
+				name='bujji',
+				z=10;
+				alert(name);
+
+				//var x = 10;
+				//alert(x);
+			}
+
+		</script>
+	</body>
+</html>

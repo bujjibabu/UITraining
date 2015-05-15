@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+		.myform{
+		  background: #c0c0c0;
+		  padding: 30px 30px;
+		  color: #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<p class="clearfix"></p>
+		<div class="col-sm-12 text-center">
+			<h4>Strings</h4>
+		</div>
+		<script type="text/javascript">
+			var name = "bujjibabu";
+			var name1 = 'bujjibabu';
+			//alert(name.length)
+			var x = 'it\'s alright';
+			var  y ="it's Allright";
+			//alert(y)
+			//string methods
+
+			var myString = 'bujjiBabu';
+			var pos = myString.indexOf('B');
+			var pos1 = myString.search('b');
+			var myNames = 'Apple, Banana, kiwi';
+			var res = myNames.slice(7,13);
+			//alert(res);
+
+			var sen = 'this is bujji abu  and doing some (babu) thing';
+			var startindex = sen.indexOf('(');
+		 	var endindex = sen.indexOf(')');
+		 	var result = sen.slice(startindex,endindex+1);	
+			//alert(result);
+			var result1 = myNames.slice(-12,-6);
+			//alert(result1);
+			var resut2 = myNames.substring(7,13);
+			//alert(resut2);
+			var resut3 = myNames.substr(7,6);
+			//alert(resut3);
+			var a = 5;
+			var A = 8;
+
+			var myString1 = 'This is Innominds doing job @ innominds';
+			//var indexofstring = myString1.indexOf('innominds');
+			//alert(indexofstring);
+			var replacestring = myString1.replace(/innominds/ig,'HoneyWell');
+			alert(replacestring);
+
+			var name2 = 'bujjibabu';
+			//name2.upper
+
+		</script>
+	</body>
+</html>

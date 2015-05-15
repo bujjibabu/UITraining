@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+		.myform{
+		  background: #c0c0c0;
+		  padding: 30px 30px;
+		  color: #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<p class="clearfix"></p>
+		<div class="col-sm-12 text-center">
+			<h4>Strings</h4>
+		</div>
+		<script type="text/javascript">
+			var myArray1 = [];
+			var myobj1 = {name:"bujji",mobile:9533068603,address:"hyd"};
+			var myobj2 = {name:"venkat",mobile:95330686023,address:"hyd1"};
+			var myobj3 = {name:"srikant",mobile:95330682603,address:"hyd2"};
+
+			myArray1.push(myobj1);
+			myArray1.push(myobj2);
+			myArray1.push(myobj3);
+
+			//myArray1.shift();
+			delete myArray1[1];
+			   //or
+			/*	myArray1.unshift(myobj1);
+			myArray1.unshift(myobj2);
+			myArray1.unshift(myobj3);*/
+			 //or
+			/*myArray1[myobj1,myobj2,myobj3];*/
+			 //or
+			/*myArray1[0] = myobj1;
+			myArray1[1] = myobj2;
+			myArray1[2] = myobj3;*/
+
+			console.log(myArray1);
+
+			var myArray = ['bujji', 'babu','anu','joom','surya'];
+			var lengthArray = myArray.length;
+			//alert(lengthArray)
+			myArray[lengthArray] = 'ram';//.push()
+			//myArray.push('john');//adding element or object last index inarray
+			myArray.unshift('pavan');
+			//console.log(myArray);
+
+			var sortingArray = myArray.sort().reverse();
+			var numberArray= [10,4,6,100,20,40,9];
+			//10-4 = 6
+			//10-6 = 4
+			var soringNumbersArray=numberArray.sort(function(a,b){return b-a});
+			//console.log(soringNumbersArray);
+
+			//var 
+		</script>
+	</body>
+</html>
