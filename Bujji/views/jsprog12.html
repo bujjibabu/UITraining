@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			#test{
+				float: left;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="clearfix"></p>
+		<div class="col-sm-12 text-center">
+			<h4>Dynamic Table</h4>
+			<div id="test"></div>
+		</div>
+		<script type="text/javascript">
+			var text = "";
+			var myArray = ['bujji','babu','satish','venkat'];
+			//document.getElementById('test')
+			for (var i = 0; i < myArray.length; i++) {
+				//logic
+				// count = count+1;
+				// cout +=1;
+
+				text += myArray[i]+" ";
+				document.getElementById('test').innerHTML=text;
+			};
+		</script>
+	</body>
+</html>
