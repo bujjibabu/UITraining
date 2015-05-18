@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.menu-items{
+			  background: rgb(41, 171, 127);
+			  color: #fff;
+			  padding: 15px;
+			}
+			.menu-items li{
+				display: inline-block;
+				background: red;
+  				padding: 7px 20px;
+  				cursor: pointer;
+			}
+			.menu-items li:hover{
+				background: blue;
+			}
+			.current{
+				background: rgb(161, 0, 255) !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<h4 class="text-center">jQuery Examples</h4>
+			<ul class="list-unstyled menu-items">
+				<li class="current">Menu Item1</li>
+				<li>Menu Item2</li>
+				<li>Menu Item3</li>
+				<li>Menu Item4</li>
+				<li>Menu Item5</li>
+				<li>Menu Item6</li>
+			</ul>
+			<p class="my-paragraph">
+				Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+			</p>
+			<button class="hide-btn btn btn-danger">Hide Paragraph</button>
+			<button class="show-btn btn btn-success">Show Paragraph</button>
+			<button class="toggle-btn btn btn-success">Toggle Paragraph</button>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.hide-btn').click(function(){
+					$('.my-paragraph').hide(5000,function(){$('.my-paragraph').show(3000);});
+					//hide(speed, call back)
+				});
+				$('.show-btn').click(function(){
+					$('.my-paragraph').show();
+					//show(speed, call back)
+				});	
+				$('.toggle-btn').click(function(){
+					$('.my-paragraph').toggle();
+					//toggle(speed, call back)
+				});
+				// $('*').click(function(){
+				// 	alert('clicked on body element');
+				// })
+				$('.menu-items li').click(function(){
+					$('.menu-items li').removeClass('current');
+					$(this).addClass('current');
+				});
+			});
+		</script>
+	</body>
+</html>
