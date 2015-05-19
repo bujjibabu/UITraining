@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.mydiv{
+				height:100px;
+				width: 100px;
+				background: red;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<h4 class="text-center">jQuery Examples</h4>
+			<div class="mydiv"></div>
+			<br>
+			<br>
+			<button class="btn btn-warning my-btn">Animate</button>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.my-btn').click(function(){
+					$('.mydiv').animate({left:'250px',top:'0px',height:'150px',width:'150px'},3000,function(){
+						$('.mydiv').animate({left:'250px',top:'250px'},3000,function(){
+							$('.mydiv').animate({left:'0px',top:'250px'},3000,function(){
+								$('.mydiv').animate({left:'0px',top:'0px'},3000);
+							});
+						});
+					});
+					//animate({params},speed,callback)
+				});
+			});
+		</script>
+	</body>
+</html>

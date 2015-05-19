@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<h4 class="text-center">jQuery Examples</h4>
+			<ul class="list-unstyled menu-items">
+				<li>Menu Item1</li>
+				<li>Menu Item2</li>
+				<li>Menu Item3</li>
+				<li>Menu Item4</li>
+				<li>Menu Item5</li>
+				<li>Menu Item6</li>
+			</ul>
+			<ul class="list-unstyled menu-items">
+				<li>Menu Item1</li>
+				<li>Menu Item2</li>
+				<li>Menu Item3</li>
+				<li>Menu Item4</li>
+				<li>Menu Item5</li>
+				<li>Menu Item6</li>
+			</ul>
+			<ul class="list-unstyled menu-items">
+				<li>Menu Item1</li>
+				<li>Menu Item2</li>
+				<li>Menu Item3</li>
+				<li>Menu Item4</li>
+				<li>Menu Item5</li>
+				<li>Menu Item6</li>
+			</ul>
+			<p class="my-paragraph0">
+				Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+			</p>
+			<p class="my-paragraph1">
+				Compressed and uncompressed copies of jQuery files are available. 
+			</p>
+			<p class="my-paragraph2">
+				Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+			</p>
+			<p class="my-paragraph3">
+				Compressed and uncompressed copies of jQuery files are available.
+			</p>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//$('.my-paragraph:first').css({color:'red'});
+				for(var i=0; i<$('p').length; i++){debugger;
+					if($('p')[i].innerText.length>100){
+						$('.my-paragraph'+i).css({color:'blue'});
+					}
+				}
+				//$('ul li:first').css({color:'red'});
+				$('ul li:first-child').css({color:'red'});
+			});
+		</script>
+	</body>
+</html>

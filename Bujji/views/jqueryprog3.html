@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.table{
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<h4 class="text-center">jQuery Examples</h4>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Head1</th>
+						<th>Head2</th>
+						<th>Head3</th>
+						<th>Head4</th>
+						<th>Head5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+					</tr>
+					<tr>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+					</tr>
+					<tr>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+					</tr>
+					<tr>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+					</tr>
+					<tr>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+						<td>td1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="my-paragraph0">
+				Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience. As of jQuery 1.11.0/2.1.0 the //# sourceMappingURL comment is not included in the compressed file.
+			</p>
+			<button class="btn btn-danger table-hide">hide table</button>
+			<button class="btn btn-primary table-show">show table</button>
+			<button class="btn btn-success table-slideup">slideup table</button>
+			<button class="btn btn-warning table-slidedown">slideDown table</button>
+			<button class="btn btn-warning table-slidetoggle">slideToggle table</button>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('tbody tr:even').css({background:'green'});
+				//click
+				//dblclick
+				//mouseenter
+				//mouseleave
+				$('.table-hide').click(function(){
+					$('.table').fadeOut(3000);
+				})
+				$('.table-show').click(function(){
+					$('.table').fadeTo(3000,0.2);
+				})
+				$('.table-slideup').click(function(){
+					$('.my-paragraph0').slideUp(3000);
+				})
+				$('.table-slidedown').click(function(){
+					$('.my-paragraph0').slideDown(3000);
+				})
+				$('.table-slidetoggle').click(function(){
+					$('.my-paragraph0').slideToggle(3000);
+				})
+			});
+		</script>
+	</body>
+</html>
