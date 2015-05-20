@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Add Class</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <style type="text/css">
+
+  <style>
+    .toggle { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px;  padding: 1em;  font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
+    .newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
+  </style>
+</head>
+<body>
+ 
+<div class="toggle">
+  <div id="effect" class="ui-corner-all">
+      Pramod.
+  </div>
+</div>
+ 
+<button id="button">Run Effect</button>
+ <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+  <script>
+  $(document).ready(function() {
+    $( "#button" ).click(function() {
+      $( "#effect" ).addClass( "newClass", 1000, callback );
+    });
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeClass( "newClass" );
+      }, 1500 );
+    }
+  });
+  </script>
+ 
+</body>
+</html>
