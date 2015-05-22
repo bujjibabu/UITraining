@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.mypara1{
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<a class="mya" target="_blank">myblog</a>
+			<a href="https://www.google.co.in/" onclick="window.open(this.href,'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share this</a>
+			<br/>
+		<button class="btn btn-success get-btn">attr()</button>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.get-btn').click(function(){
+					$('.mya').attr({'href':'http://bujjibau.blogspot.in/','title':'testing'});
+				});
+			});
+		</script>
+	</body>
+</html>

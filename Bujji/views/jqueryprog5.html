@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.mypara1{
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<p class="mypara1">don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.</p>
+
+			<p class="mypara2">don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.don't use the id attributes multiple time don't omit the closing tags. close the html tags properly. don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.don't use the id attributes multiple time don't omit the closing tags. close the html tags properly.</p>
+		</div>
+		<input type="text" value="bujjibabu" class="inputvalue"/>
+		<button class="btn btn-success get-btn">getText()</button>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//$('.mypara1').css('color','red');
+				//$('.mypara1').slideUp(3000).slideDown(3000,function(){$('.mypara1').css('color','blue')}).animate({'left':'200px'});
+				$('.get-btn').click(function(){
+					var gettext = $('.mypara1').text('<h1> this is bujji </h1>');
+					var gethtml =  $('.mypara2').html('<h1> this is bujji </h1>');
+					//var getInptvalue = $('.inputvalue').val();
+					var setInptvalue = $('.inputvalue').val('venkat');
+					//alert(setInptvalue);
+					//document.getElementById('textid').innerhtml = "<p>may be </p>";
+					//console.log("gethtml",gethtml);
+					//console.log("gettext",gettext);
+					//alert(gettext+'click action');
+				});
+			});
+
+		</script>
+	</body>
+</html>
