@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.activcls{
+				background: red !important;
+				color:blue !important;
+				cursor: pointer !important;
+			}
+			.myul{
+				margin-top:5px;
+			}
+			.myul li{
+				padding: 5px 54px;
+				background: #000;
+				color: #fff;
+				font-size: 20px;
+				display: inline;
+			}
+			.myul li:hover{
+				background: red;
+				color:blue;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<ul class="myul">
+				<li>list item1</li>
+				<li>list item2</li>
+				<li>list item3</li>
+				<li>list item4</li>
+				<li>list item5</li>
+				<li>list item6</li>
+			</ul>
+			<p class="mypara"></p>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.myul li').click(function(){
+					$('li').removeClass('activcls')
+					$(this).addClass('activcls');
+				});
+				var data = ['bujji','babu','raj','joom','venkat','srikant','pavan'];
+				for (var i = 0; i < data.length; i++) {
+					$('.mypara').append('<p>'+data[i]+'</p>');
+				};
+			});
+		</script>
+	</body>
+</html>

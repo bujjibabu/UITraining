@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.mypara{
+				color:#fff;
+				background: #000;
+				padding: 10px;
+			}
+			.mypara1{
+				font-size: 20px;
+				font-family: 'roboto';
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<div>don't use the id attributes multiple time don't omit the closing tags.</div>
+			<ul class="myul">my ul
+				<li>list item1</li>
+				<li>list item2</li>
+				<li>list item3</li>
+				<li>list item4</li>
+				<li>list item5</li>
+			</ul>
+			<ul class="myul1">my ul1
+				<li>list item1</li>
+				<li>list item2</li>
+				<li>list item3</li>
+				<li>list item4</li>
+				<li>list item5</li>
+			</ul> 
+			<div></div>
+			<br>
+			<br>
+			<p>this is paragraph add class</p>		
+			<button class="btn btn-danger btn-remove">remove()</button>
+			<button class="btn btn-primary btn-empty">empty()</button>
+			<button class="btn btn-success btn-addcls">addClass()</button>
+			<button class="btn btn-success btn-removeclass">removeClass()</button>
+			<button class="btn btn-warning btn-toggleclass">toggleClass()</button>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('div').append('<br/><b>close the html tags properly.</b>');
+				$('div').prepend('<b>close the html tags properly.</b><br/>');
+				var text1 = '<div>text</div>'; // create html
+				var text2 = $('<div></div>').text('sometext'); // create with jquery.
+				var text3 = document.createElement('div');
+				$(text3).text('sometext');
+				$('div').append(text1,text2,text3);
+
+				$('.btn-remove').on('click',function(){
+					$('.myul').remove();
+				});
+				$('.btn-empty').on('click',function(){
+					$('.myul1').empty();
+				});
+
+				$('.btn-addcls').click(function(){
+					$('p, .myul1').addClass('mypara mypara1');
+				});
+
+				$('.btn-removeclass').click(function(){
+					$('p').removeClass('mypara');
+				});
+
+				$('.btn-toggleclass').click(function(){
+					$('p').toggleClass('mypara');
+				});
+			});
+		</script>
+	</body>
+</html>
