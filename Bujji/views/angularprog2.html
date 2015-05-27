@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<div>
+				<div><input type="text" id="inputtext"/></div>
+				<div id="outputtxt"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var inputText = document.getElementById('inputtext');
+			inputText.addEventListener('keyup',function(){
+				var inputboxvalue = inputText.value;
+				document.getElementById('outputtxt').innerHTML=inputboxvalue;
+				//console.log(inputboxvalue);
+			})
+		</script>
+	</body>
+</html>

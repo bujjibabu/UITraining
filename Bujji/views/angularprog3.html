@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<div class="col-sm-12 container">
+			<div>
+				<div><input type="text" id="inputtext"/></div>
+				<div id="outputtxt"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#inputtext").on('keyup',function(){
+					$('#outputtxt').html($("#inputtext").val());
+				})
+			});
+		</script>
+	</body>
+</html>
