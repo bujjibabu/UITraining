@@ -1,0 +1,69 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body ng-controller="MainCtrl">
+		<div class="col-sm-12 container">
+			<div>{{myString}}</div>
+			<div ng-bind="myString"></div>
+			<div ng-bind="myObject.name"></div>
+			<div ng-bind="myObject.mobile"></div>
+			<div ng-bind="myObject.pin"></div>
+			<div ng-bind="myObject.address"></div>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Mobile</th>
+						<th>PIN</th>
+						<th>Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{myArray[0].name}}</td>
+						<td>{{myArray[0].Mobile}}</td>
+						<td>{{myArray[0].pin}}</td>
+						<td>{{myArray[0].address}}</td>
+					</tr>
+					<tr>
+						<td>{{myArray[1].name}}</td>
+						<td>{{myArray[1].Mobile}}</td>
+						<td>{{myArray[1].pin}}</td>
+						<td>{{myArray[1].address}}</td>
+					</tr>
+					<tr>
+						<td>{{myArray[2].name}}</td>
+						<td>{{myArray[2].Mobile}}</td>
+						<td>{{myArray[2].pin}}</td>
+						<td>{{myArray[2].address}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/angular.js"></script>
+		<script type="text/javascript">
+			var myapp = angular.module('myApp',[]);
+			myapp.controller('MainCtrl',function($scope){
+				/*var myString = 'Bujjibabu';
+				var myString = "Bujjibabu";
+				var MyNum = 12;*/
+ 				//console.log($scope);
+				//console.log(angular);
+				/*var myArray = [{name:'bujji',mobile:9533068603},{name:'zoom',mobile:7799476655}];
+				console.log(myArray[1]);
+				console.log(myArray[2].name);*/
+				$scope.myString = 'Bujjibabu';
+				$scope.myObject = {name:'bujji',Mobile:9533068603,pin:532459,address:'hyd'};
+				$scope.myArray = [
+				{name:'Bujjibabu',Mobile:9533068603,pin:532559,address:'hyd'},
+				{name:'Zoom',Mobile:958456238,pin:532429,address:'Vizag'},
+				{name:'Ramesh',Mobile:457891235,pin:532459,address:'U.S'}
+				];
+			});
+		</script>
+	</body>
+</html>

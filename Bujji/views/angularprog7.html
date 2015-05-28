@@ -1,0 +1,52 @@
+<!doctype html>
+<html data-ng-app="myApp">
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<div class="col-sm-12 container" ng-controller="MainCtrl">
+			<h2>Table Data</h2>
+			<input type="text" data-ng-model="query" placeholder="Search"/>
+			<div ng-init="reverse=false; prevalue='name'"></div>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th ng-click="prevalue='name';reverse=!reverse">Name</th>
+						<th ng-click="prevalue='Mobile';reverse=!reverse">Mobile</th>
+						<th ng-click="prevalue='pin';reverse=!reverse">PIN</th>
+						<th ng-click="prevalue='address';reverse=!reverse">Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="obj in myArray | filter:query | orderBy:prevalue:reverse">
+						<td>{{obj.name}}</td>
+						<td>{{obj.Mobile}}</td>
+						<td>{{obj.pin}}</td>
+						<td>{{obj.address}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/angular.js"></script>
+		<script type="text/javascript">
+				angular.module('myApp',[]).controller('MainCtrl',function($scope){
+				$scope.myArray = [
+				{name:'Bujjibabu',Mobile:9533068603,pin:532559,address:'hyd'},
+				{name:'Zoom',Mobile:958456238,pin:532429,address:'Vizag'},
+				{name:'Ramesh',Mobile:457891235,pin:532459,address:'U.S'},
+				{name:'Ramesh1',Mobile:457891235,pin:532459,address:'U.S.A'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'},
+				{name:'Ramesh2',Mobile:457891235,pin:532459,address:'U.K'}
+				];
+			});
+		</script>
+	</body>
+</html>

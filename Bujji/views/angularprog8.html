@@ -1,0 +1,62 @@
+<!doctype html>
+<html data-ng-app="myApp">
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<div class="col-sm-12 container" ng-controller="MainCtrl">
+			<form>
+				<div class="form-group">
+					<label>Username: </label>
+					<input type="text" ng-model="name" class="form-control" placeholder="entername">
+				</div>
+				<div class="form-group">
+					<label>Password: </label>
+					<input type="password" ng-model="password" class="form-control" placeholder="entername">
+				</div>
+				<button class="btn btn-success" ng-click="fnSubmit()">Submit</button>
+			</form>
+			<h2>Details</h2>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>password</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="obj in myArray">
+						<td>{{obj.name}}</td>
+						<td>{{obj.pwd}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/angular.js"></script>
+		<script type="text/javascript">
+				angular.module('myApp',[]).controller('MainCtrl',function($scope){
+						//$scope.myObject = {};
+						$scope.myArray = [];
+						$scope.fnSubmit = function(){
+							$scope.myArray.push({name:$scope.name,pwd:$scope.password});
+							$scope.name='';
+							$scope.password='';
+							/*$.ajax({
+							  type: "POST",
+							  url: "https://192.268.45/services/userdetails",
+							  data: $scope.myObject
+							}).done(function( msg ) {
+								if(msg===200){
+									window.hrfef="dashboard.html"
+								}
+							  }).fail(function(msg){
+							    alert( "username or password wrong" );
+							});*/
+							console.log($scope.myObject);
+						};
+				});
+		</script>
+	</body>
+</html>
