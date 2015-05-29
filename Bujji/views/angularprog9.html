@@ -1,0 +1,166 @@
+<!doctype html>
+<html data-ng-app="myApp">
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style>
+		.icon-delete,
+		.icon-edit{
+			cursor: pointer;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-offset-4 col-sm-4 container" ng-controller="MainCtrl">
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<form class="">
+						<div class="form-group">
+							<label>Username: </label>
+							<input type="text" ng-model="name" class="form-control" placeholder="entername">
+						</div>
+						<div class="form-group">
+							<label>Password: </label>
+							<input type="password" ng-model="password" class="form-control" placeholder="entername">
+						</div>
+					</form>
+			       </div>
+			      <div class="modal-footer">
+			      	<button class="btn btn-success submit" ng-click="fnSubmit()" ng-show="showSubmit">Submit</button>
+					<button class="btn btn-success update" ng-click="fnUpdate()" ng-show="showUpdate">Update</button>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+			<h2>Details</h2>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>S.No</th>
+						<th>Username</th>
+						<th>password</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="obj in myArray">
+						<td>{{$index + 1}}</td>
+						<td>{{obj.name}}</td>
+						<td>{{obj.pwd}}</td>
+						<td>
+							<i class="glyphicon glyphicon-trash icon-delete" ng-click="fnDelete($index)"></i>
+							<i class="glyphicon glyphicon-edit icon-edit" ng-click="fnEdit(obj,$index);"></i>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+<p class="clearfix"></p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/angular.js"></script>
+		<script type="text/javascript">
+				angular.module('myApp',[]).controller('MainCtrl',function($scope){
+						$scope.myArray = [];
+						//add row
+						$scope.showSubmit = true;
+						$scope.showUpdate = false;
+
+						$(function () {
+						  $('[data-toggle="tooltip"]').tooltip()
+						});
+
+						$scope.fnSubmit = function(){
+							$scope.myArray.push({name:$scope.name,pwd:$scope.password});
+							$scope.name='';
+							$scope.password='';
+							console.log($scope.myArray);
+							$('#myModal').modal('hide');
+							//console.log($scope.myObject);
+						};
+
+						//delete row
+						$scope.fnDelete = function(index){
+							$scope.myArray.splice(index,1);
+							console.log($scope.myArray);
+						};
+
+						//edit row
+						$scope.fnEdit = function(obj,index){
+							$scope.showSubmit = false;
+							$scope.showUpdate = true;
+							$scope.name=obj.name;
+							$scope.password=obj.pwd;
+							$scope.editIndex = index;
+						}
+
+						// update row
+						$scope.fnUpdate = function(){
+							$scope.myEditObj = {name:$scope.name,pwd:$scope.password}
+							$scope.myArray[$scope.editIndex] = $scope.myEditObj;
+							$scope.name='';
+							$scope.password='';
+						}
+				});
+		</script>
+	</body>
+</html>
