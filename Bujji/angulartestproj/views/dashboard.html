@@ -1,0 +1,21 @@
+<div ng-bind="pagename"></div>
+<div>
+	<h2>Users Table {{test}}</h2></div>
+<div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>	
+				<th>Name</th>
+				<th>Mobile</th>
+				<th>Pin</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="user in users">
+				<td ng-bind="user.name"></td>
+				<td ng-bind="user.mobile"></td>
+				<td ng-bind="user.pin"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
