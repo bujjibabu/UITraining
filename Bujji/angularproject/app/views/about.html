@@ -1,13 +1,23 @@
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
-<h1>{{pagename}}</h1>
+<div class="col-sm-12">
+	<h2>User Datails</h2>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Last Name</th>
+				<th>Mobile</th>
+				<th>Address</th>
+				<th>Pin</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="obj in userdata">
+				<td>{{obj.name}}</td>
+				<td>{{obj.lname}}</td>
+				<td>{{obj.Mobile}}</td>
+				<td>{{obj.Address}}</td>
+				<td>{{obj.pin}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

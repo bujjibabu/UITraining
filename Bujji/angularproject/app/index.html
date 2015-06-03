@@ -25,9 +25,9 @@
         <div ng-include="'views/header.html'"></div>
       </div>
 
-      <div ng-view=""></div>
+      <div ng-view="" class="clearfix"></div>
 
-      <div class="footer">
+      <div class="footer clearfix">
         <div ng-include="'views/footer.html'"></div>
       </div>
     </div>
@@ -67,6 +67,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/userDetailsServices.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/contactctrl.js"></script>

@@ -1,0 +1,30 @@
+[
+	{
+		"name":"Bujjibabu",
+		"lname":"balaga",
+		"Mobile":9533068603,
+		"Address":"Hyderbad",
+		"pin":532459
+	},
+	{
+		"name":"pramod",
+		"lname":"balaga1",
+		"Mobile":953306860323,
+		"Address":"Vizag",
+		"pin":53245239
+	},
+	{
+		"name":"Srikanth",
+		"lname":"s",
+		"Mobile":9533062348603,
+		"Address":"U.S.A",
+		"pin":53243459
+	},
+	{
+		"name":"venkat",
+		"lname":"d",
+		"Mobile":95330638603,
+		"Address":"U.K",
+		"pin":5324259
+	}
+]
